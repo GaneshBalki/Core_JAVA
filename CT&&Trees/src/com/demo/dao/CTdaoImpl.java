@@ -24,7 +24,7 @@ public class CTdaoImpl implements CTdao {
 		System.out.println("How many trees you want to add");
 		int cnt=sc.nextInt();
 		for(int i=0;i<cnt;i++) {
-			System.out.println("Enter "+i+" Tree name:");
+			System.out.println("Enter "+(i+1)+" Tree name:");
 			String tr = sc.next();
 			al.add(tr);
 		}
