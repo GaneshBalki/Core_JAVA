@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>CurrencyConvertor</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>convertor</servlet-name>
+		<servlet-class>com.demo.servlet.Convertor</servlet-class>
+		<init-param>
+			<param-name>rate</param-name>
+			<param-value>82</param-value>
+		</init-param>
+
+		
+	</servlet>
+	
+		<servlet>
+		<servlet-name>convertor2</servlet-name>
+		<servlet-class>com.demo.servlet.Convertor2</servlet-class>
+		<init-param>
+			<param-name>rate</param-name>
+			<param-value>82</param-value>
+		</init-param>
+
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>convertor</servlet-name>
+		<url-pattern>/convertor</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>convertor2</servlet-name>
+		<url-pattern>/convertor2</url-pattern>
+	</servlet-mapping>
+</web-app>
